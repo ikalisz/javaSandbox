@@ -121,4 +121,4 @@ function greetUser(name) {
 }
 // console.log(getUserInfo('Bo', 'Peep', greetUser))
 
-//callback is used to reference functions in functions during parameters
+//callback means calling a function in a function
