@@ -36,7 +36,7 @@ if (age >= 26 && hasDriversLicense) {
    // console.log('you can\'t rent a car with us')
 }
 
-//you can add properties and values to objects with dot notation
+//you can add/change/access properties and values to objects with dot notation
 var myFavorites = {
     color: 'green',
     food: 'sushi',
@@ -47,3 +47,34 @@ var myFavorites = {
 //the code below adds the property iceCream to the list with the value of coffee
 myFavorites.iceCream = 'coffee'
 //console.log(myFavorites)
+var food = 'food'
+
+console.log('my favorite food is ' + myFavorites['food'])
+
+var chameleon = {
+    color: 'red',
+    texture: 'scaly'
+}
+console.log(chameleon.color)
+function changeColor(color,newColor) {
+    return chameleon['color'] = newColor
+}
+console.log(changeColor('color','purple'))
+//you can access props of objects without knowing what the value is and aren't super useful yet.
+function carMaker(doors) {
+    return {
+        wheels: 4,
+        doors: doors
+    }
+}
+var coupe = carMaker(2)
+
+var sedan = carMaker(4)
+
+console.log(coupe.doors)
+console.log(coupe.wheels)
+console.log(sedan.doors)
+console.log(sedan.wheels)
+console.log(coupe)
+console.log(sedan)
+//you can create objects in functions
