@@ -14,7 +14,25 @@ function addNumbersInArr(numArr){
 
 addNumbersInArr(numArray);
 
-function addNumbers(x,y){
+function addNumbers(x,y) {
     return (x+y)
 }
 console.log(addNumbers(3,4));
+
+var numX = 10;
+var numY = 3;
+console.log(numX % numY);
+
+if (addNumbers(3,4) == 3) {
+    var scopeNum  = 7;
+    console.log(scopeNum);
+} else {
+    var scopeNum = 8;
+    console.log(scopeNum)
+}
+// console.log(scopeNum)
+
+var numX = 10;
+var numY = 3;
+console.log(numX % numY);
+
