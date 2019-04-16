@@ -1,9 +1,12 @@
+// you can unslash code with ctrl (or cmnd on mac) and the backslash key
+//uncomment any of the console.logs to see how the code works
+
 var password = 'password'
 var confirmPassword = 'password'
 if (password === confirmPassword) {
-    console.log('passwords match')
+    //console.log('passwords match')
 } else {
-    console.log('passwords do not match')
+    //console.log('passwords do not match')
 }
 
 // === does not equal ==
@@ -28,7 +31,19 @@ var hasDriversLicense = true
 var age = 36
 
 if (age >= 26 && hasDriversLicense) {
-    console.log('you can rent a car with us')
+   // console.log('you can rent a car with us')
 } else {
-    console.log('you can\'t rent a car with us')
+   // console.log('you can\'t rent a car with us')
 }
+
+//you can add properties and values to objects with dot notation
+var myFavorites = {
+    color: 'green',
+    food: 'sushi',
+    number: 7
+}
+//console.log(myFavorites)
+
+//the code below adds the property iceCream to the list with the value of coffee
+myFavorites.iceCream = 'coffee'
+//console.log(myFavorites)
