@@ -103,3 +103,11 @@ findingEvens(numArr)
 // console.log(oddNums)
 
 //this is a basic even/odd sorter
+
+//setTimeout() can be used to delay a function by a certain amount of ms
+//(array name).forEach will go through each array index and perform an action, it just needs to know what to perform
+arrNum = [1,2,3,4]
+arrNum.forEach(function(num,i,arr) {
+    return arr[i] += 40
+})
+console.log(arrNum)
