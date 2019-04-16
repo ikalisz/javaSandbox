@@ -82,7 +82,7 @@ var sedan = carMaker(4)
 numArr = [1,3,6,8]
 function addingLoop(numArr){
     for (var i = 0; i < numArr.length; i++) {
-        console.log(+numArr[i] ++)
+        // console.log(+numArr[i] ++)
     }
 }
 addingLoop(numArr)
@@ -110,4 +110,15 @@ arrNum = [1,2,3,4]
 arrNum.forEach(function(num,i,arr) {
     return arr[i] += 40
 })
-console.log(arrNum)
+// console.log(arrNum)
+
+function getUserInfo (firstName, lastName, callback) {
+    var name = firstName + ' ' + lastName
+    return callback(name)
+}
+function greetUser(name) {
+    return 'hello, ' + name + '!'
+}
+// console.log(getUserInfo('Bo', 'Peep', greetUser))
+
+//callback is used to reference functions in functions during parameters
