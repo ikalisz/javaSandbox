@@ -49,17 +49,18 @@ myFavorites.iceCream = 'coffee'
 //console.log(myFavorites)
 var food = 'food'
 
-console.log('my favorite food is ' + myFavorites['food'])
+// console.log('my favorite food is ' + myFavorites['food'])
 
 var chameleon = {
     color: 'red',
     texture: 'scaly'
 }
-console.log(chameleon.color)
+// console.log(chameleon.color)
 function changeColor(color,newColor) {
     return chameleon['color'] = newColor
 }
-console.log(changeColor('color','purple'))
+// console.log(changeColor('color','purple'))
+
 //you can access props of objects without knowing what the value is and aren't super useful yet.
 function carMaker(doors) {
     return {
@@ -71,10 +72,34 @@ var coupe = carMaker(2)
 
 var sedan = carMaker(4)
 
-console.log(coupe.doors)
-console.log(coupe.wheels)
-console.log(sedan.doors)
-console.log(sedan.wheels)
-console.log(coupe)
-console.log(sedan)
+// console.log(coupe.doors)
+// console.log(coupe.wheels)
+// console.log(sedan.doors)
+// console.log(sedan.wheels)
+// console.log(coupe)
+// console.log(sedan)
 //you can create objects in functions
+numArr = [1,3,6,8]
+function addingLoop(numArr){
+    for (var i = 0; i < numArr.length; i++) {
+        console.log(+numArr[i] ++)
+    }
+}
+addingLoop(numArr)
+//above doesnt work yet
+var oddNums = []
+var evenNums = []
+function findingEvens(numArr) {
+    for (var i = 0; i < numArr.length; i++) {
+        if (numArr[i] % 2) {
+            oddNums.push(numArr[i])
+        } else {
+            evenNums.push(numArr[i])
+        }
+    }
+}
+findingEvens(numArr)
+// console.log(evenNums)
+// console.log(oddNums)
+
+//this is a basic even/odd sorter
