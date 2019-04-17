@@ -36,3 +36,23 @@ function fizzBuzz(num) {
 }
 // console.log(fizzBuzz(15))
 
+// for loops for (start point, end point, addition)
+
+let placesVisited = ['Hawaii', 'Thailand', 'Greece', 'Belize']
+
+for (let i = 0; i < placesVisited.length; i++) {
+    // console.log(`I have visited ${placesVisited[i]}`)
+}
+
+function checkLocation(location) {
+    for (let i = 0; i < placesVisited.length; i++) {
+        if (location === placesVisited.indexOf(location)) {
+            console.log('1')
+            return `I have visited ${location}`
+        } else {
+            console.log('0')
+            return `I need to visit ${location}`
+        }
+    }
+}
+checkLocation('Denver')
