@@ -47,12 +47,14 @@ for (let i = 0; i < placesVisited.length; i++) {
 function checkLocation(location) {
     for (let i = 0; i < placesVisited.length; i++) {
         if (location === placesVisited.indexOf(location)) {
-            console.log('1')
+            // console.log('1')
             return `I have visited ${location}`
         } else {
-            console.log('0')
+            // console.log('0')
             return `I need to visit ${location}`
         }
     }
 }
 checkLocation('Denver')
+
+//Callback is a function within a function as a parameter, or a function invoking another function
