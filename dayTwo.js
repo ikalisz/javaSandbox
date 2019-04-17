@@ -122,3 +122,11 @@ function greetUser(name) {
 // console.log(getUserInfo('Bo', 'Peep', greetUser))
 
 //callback means calling a function in a function
+//Math.floor chops off any decimals on a number
+
+// console.log("I'm waiting!")
+// setTimeout(function(){
+//     console.log("I'm done!")
+// },2000)
+
+//the code above shows how setTimeout can work
