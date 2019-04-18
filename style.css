@@ -1,3 +1,22 @@
-index.html {
-    background: blue
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: #ff0099;
+    /* top right bottom left */
+    /* travels counter clockwise */
+    /* margin pushes out */
+    /* border and padding push in */
+    float: right;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    background: #ccccff;
+    float: right;
 }
