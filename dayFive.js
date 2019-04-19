@@ -29,3 +29,4 @@ for (let prop in obj) {
 }
 /* for in loops loop through an object or an array and for each item execute code assigning it to the variable at
 the start of the condition */
+//array.map() builds a new array and stores the values that get returned from the function in the new array from the old array
